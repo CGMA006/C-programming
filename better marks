@@ -5,13 +5,14 @@ int main() {
     printf("Enter your marks: ");
     scanf("%d", &marks);
 
-    if (marks >= 40 && marks < 101) {
-        printf("You pass\n");
-    } if (marks <= 40){
-        printf("You fail\n");
-    }
-    if ("marks > 100"){
-        printf ("Invalid");
+    if (marks >= 0 && marks <= 100) {
+        if (marks >= 40) {
+            printf("You pass\n");
+        } else {
+            printf("You fail\n");
+        }
+    } else {
+        printf("Invalid input\n");
     }
 
     return 0;
