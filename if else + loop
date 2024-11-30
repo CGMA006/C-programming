@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main ()
+{
+int i;
+int n;
+printf ("Enter the number ");
+scanf ("%d", &n);
+if (n<5){
+for (i=1;i<=10;i++){
+printf ("Hello World \n");
+}}
+else {
+printf ("Bye World");
+}
+}
