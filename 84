@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    short a = 10;
+    int b = a + 100;  // Implicit conversion from short to int
+    printf("Result: %d", b);
+    return 0;
+}
