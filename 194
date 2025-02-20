@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void registerExample() {
+    register int registerVar = 5;
+    printf("%d\n", registerVar);
+    registerVar++;
+    printf("%d\n", registerVar);
+}
+
+int main() {
+    registerExample();
+    return 0;
+}
