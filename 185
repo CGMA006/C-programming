@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void modifyByValue(int a) {
+    a = a + 10;
+    printf("Modified (By Value): %d\n", a);
+}
+
+int main() {
+    int x = 5;
+    modifyByValue(x);
+    printf("Original x: %d\n", x); // x is unchanged
+    return 0;
+}
