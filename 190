@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int reverse(int num) {
+    static int reversed = 0;
+    if (num == 0) return reversed;
+    reversed = reversed * 10 + num % 10;
+    return reverse(num / 10);
+}
+
+int main() {
+    printf("%d\n", reverse(1234));
+    return 0;
+}
