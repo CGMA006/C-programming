@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    unsigned int num = 4000000000;
+    printf("Unsigned Int: %u", num);
+    return 0;
+}
