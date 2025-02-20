@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int a;
+    float b;
+    printf("Enter an integer and a float: ");
+    scanf("%d %f", &a, &b);
+    printf("Integer: %d, Float: %.2f", a, b);
+    return 0;
+}
