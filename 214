@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    int arr[3] = {5, 10, 15};
+    int *ptr = arr;
+    printf("%d %d\n", ptr[0], ptr[2]);
+    return 0;
+}
