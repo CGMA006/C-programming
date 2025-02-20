@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    printf("Before code block\n");
+    goto skipBlock;
+    
+    printf("This code will be skipped\n");
+    
+    skipBlock:
+    printf("After code block\n");
+    return 0;
+}
