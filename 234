@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+struct Person {
+    int age;
+    float height;
+};
+
+union Data {
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person p = {25, 5.9};
+    union Data data;
+    data.age = 25;
+    printf("Structure size: %lu\n", sizeof(p));
+    printf("Union size: %lu\n", sizeof(data));
+    return 0;
+}
