@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+    char *arr[] = {"Hello", "World"};
+    char **ptr = arr;
+    printf("%s %s\n", ptr[0], ptr[1]);
+    return 0;
+}
