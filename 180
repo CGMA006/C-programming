@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void display() {
+    int localVar = 10;
+    printf("%d\n", localVar);
+}
+
+int main() {
+    display();
+    return 0;
+}
