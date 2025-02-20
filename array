@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    char name[] = {'H', 'e', 'l', 'l', 'o', '\0'};
+    printf("Message: %s", name);
+    return 0;
+}
