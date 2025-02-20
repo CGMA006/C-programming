@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    int a = 4;
+    double b = a / 3;  // Implicit conversion from int to double in division
+    printf("Result: %.2lf", b);
+    return 0;
+}
