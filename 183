@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void addByValue(int a, int b) {
+    a = a + b;
+    printf("Sum (By Value): %d\n", a);
+}
+
+int main() {
+    int x = 5, y = 3;
+    addByValue(x, y);
+    printf("Original x: %d\n", x); // x is unchanged
+    return 0;
+}
