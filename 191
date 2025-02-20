@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int globalVar = 10;
+
+void printGlobal() {
+    printf("%d\n", globalVar);
+}
+
+int main() {
+    printGlobal();
+    globalVar = 20;
+    printGlobal();
+    return 0;
+}
