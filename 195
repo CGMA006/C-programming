@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int globalVar = 100;
+
+void compare() {
+    int globalVar = 10;
+    printf("Local Global: %d\n", globalVar);
+    printf("Actual Global: %d\n", ::globalVar);
+}
+
+int main() {
+    compare();
+    return 0;
+}
