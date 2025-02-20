@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    double a = 9.876;
+    float b = (float) a;  // Explicit casting from double to float
+    printf("Result: %.2f", b);
+    return 0;
+}
