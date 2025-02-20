@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int choice = 1;
+    
+    switch (choice) {
+        case 1:
+            printf("Option 1\n");
+        case 2:
+            printf("Option 2\n");
+        case 3:
+            printf("Option 3\n");
+        default:
+            printf("Invalid option\n");
+    }
+    
+    return 0;
+}
