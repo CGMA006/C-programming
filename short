@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    short int x = 32000;
+    printf("Short Int: %hd", x);
+    return 0;
+}
