@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void printLocal() {
+    int localVar = 5;
+    printf("%d\n", localVar);
+}
+
+int main() {
+    printLocal();
+    return 0;
+}
