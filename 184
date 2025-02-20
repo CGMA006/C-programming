@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void addByReference(int *a, int *b) {
+    *a = *a + *b;
+    printf("Sum (By Reference): %d\n", *a);
+}
+
+int main() {
+    int x = 5, y = 3;
+    addByReference(&x, &y);
+    printf("Updated x: %d\n", x); // x is updated
+    return 0;
+}
