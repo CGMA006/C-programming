@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    long double num = 123456.789123456789L;
+    printf("Long Double: %.15Lf", num);
+    return 0;
+}
