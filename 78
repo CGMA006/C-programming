@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main() {
+    float a = 7.56;
+    int b = (int) a;  // Explicit casting from float to int
+    printf("Result: %d", b);
+    return 0;
+}
