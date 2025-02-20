@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void staticExample() {
+    static int staticVar = 0;
+    staticVar++;
+    printf("%d\n", staticVar);
+}
+
+int main() {
+    staticExample();
+    staticExample();
+    staticExample();
+    return 0;
+}
