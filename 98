@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int num = 15;
+    if (num > 10) {
+        if (num < 20) {
+            printf("Number is between 10 and 20");
+        }
+    }
+    return 0;
+}
