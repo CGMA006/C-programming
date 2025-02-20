@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    char name[] = "C Programming";
+    printf("String: %s", name);
+    return 0;
+}
