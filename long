@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    long int y = 1234567890;
+    printf("Long Int: %ld", y);
+    return 0;
+}
