@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+    int state = 1;
+    
+    start:
+    if (state == 1) {
+        printf("State 1: Start\n");
+        state = 2;
+        goto start;
+    }
+    
+    if (state == 2) {
+        printf("State 2: Transition\n");
+        state = 3;
+        goto start;
+    }
+    
+    if (state == 3) {
+        printf("State 3: End\n");
+    }
+    
+    return 0;
+}
