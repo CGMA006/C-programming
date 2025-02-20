@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    int num = 0;
+    if (!num) {
+        printf("Number is zero");
+    }
+    return 0;
+}
