@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_TASKS 100
+#define TASK_LENGTH 100
+#define FILE_NAME "tasks.txt"
+
+void addTask();
+void viewTasks();
+
+int main() {
+    int choice;
+    while (1) {
+        printf("\nTo-Do List:\n");
+        printf("1. Add Task\n");
+        printf("2. View Tasks\n");
+        printf("3. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        getchar();
+
+        switch (choice) {
+            case 1:
+                addTask();
+                break;
+            case 2:
+                viewTasks();
+                break;
+            case 3:
+                printf("Exiting...\n");
+                exit(0);
+            default:
+                printf("Invalid choice! Try again.\n");
+        }
+    }
+    return 0;
+}
+
+void addTask() {
+    FILE *file = fopen(FILE_NAME, "a");
+    if (!file) {
+        printf("Error opening file!\n");
+        return;
+    }
+
+    char task[TASK_LENGTH];
+    printf("Enter task: ");
+    fgets(task, TASK_LENGTH, stdin);
+    task[strcspn(task, "\n")] = 0;
+
+    fprintf(file, "%s\n", task);
+    fclose(file);
+    printf("Task added!\n");
+}
+
+void viewTasks() {
+    FILE *file = fopen(FILE_NAME, "r");
+    if (!file) {
+        printf("No tasks found.\n");
+        return;
+    }
+
+    char task[TASK_LENGTH];
+    int count = 1;
+    printf("\nYour Tasks:\n");
+    while (fgets(task, TASK_LENGTH, file)) {
+        printf("%d. %s", count++, task);
+    }
+    fclose(file);
+}
